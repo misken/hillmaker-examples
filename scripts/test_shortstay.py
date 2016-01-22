@@ -17,6 +17,7 @@ end = '3/30/1996 23:45'
 # Optional inputs
 tot_fld_name = 'SSU'
 bin_mins = 120
+output_path = './output'
 
 
 df = pd.read_csv(file_stopdata, parse_dates=[in_fld_name, out_fld_name])
@@ -25,4 +26,5 @@ hm.make_hills(scenario, df, in_fld_name, out_fld_name,
                      start, end, cat_fld_name,
                      tot_fld_name, bin_mins,
                      cat_to_exclude=None,
-                     export_path='./output', verbose=1)
+                     export_path=output_path,
+                     verbose=1)

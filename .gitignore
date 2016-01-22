@@ -1,7 +1,3 @@
-# ignore all files in the outputs subdirs
-notebooks/output/*.*
-scripts/output/*.*
-
 # ignore temporary Python stuff
 scripts/*.pyc
 notebooks/.ipynb_checkpoints/
