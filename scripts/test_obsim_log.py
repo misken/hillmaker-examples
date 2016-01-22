@@ -3,7 +3,7 @@ from pandas import Timestamp
 
 import hillmaker
 
-file_stopdata = '../data/unit_stop_log_Experiment1_Scenario1_Rep1.csv'
+file_stopdata = 'data/unit_stop_log_Experiment1_Scenario1_Rep1.csv'
 
 scenario_name = 'log_unitocc_test'
 in_fld_name = 'EnteredTS'
@@ -28,9 +28,10 @@ df['ExitedTS'] = df.apply(lambda row:
 
 # Filter input data by included included categories
 
-df = df[df[cat_fld_name].isnotin(excludecats)]
+df = df[df[cat_fld_name].isin(excludecats) == False]
 
 hillmaker.make_hills(scenario_name, df, in_fld_name, out_fld_name,
                      start_analysis, end_analysis, cat_fld_name,
                      total_str=tot_fld_name, bin_size_minutes=bin_size_mins,
+                     export_path='./testing/output',
                      cat_to_exclude=excludecats, verbose=1)
