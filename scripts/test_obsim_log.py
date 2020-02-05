@@ -14,9 +14,7 @@ end_analysis = '11/1/2017 00:00'
 
 # Optional inputs
 
-tot_fld_name = 'OBTot'
 bin_size_mins = 60
-excludecats = ['Obs']
 
 df = pd.read_csv(file_stopdata)
 basedate = Timestamp('20150215 00:00:00')
@@ -32,6 +30,5 @@ df = df[df[cat_fld_name].isin(excludecats) == False]
 
 hillmaker.make_hills(scenario_name, df, in_fld_name, out_fld_name,
                      start_analysis, end_analysis, cat_fld_name,
-                     total_str=tot_fld_name, bin_size_minutes=bin_size_mins,
-                     export_path='./testing/output',
-                     cat_to_exclude=excludecats, verbose=1)
+                     bin_size_minutes=bin_size_mins,
+                     export_path='./output', verbose=1)
