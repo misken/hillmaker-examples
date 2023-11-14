@@ -1,6 +1,6 @@
 # ignore temporary Python stuff
 scripts/*.pyc
-./.ipynb_checkpoints/
+.ipynb_checkpoints/*
 output/*.csv
 output/*.png
 
