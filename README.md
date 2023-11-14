@@ -13,6 +13,6 @@ need to install hillmaker into a virtual environment and then use that environme
 **IMPORTANT NOTE** A new release of hillmaker (0.8.0) is planned for November, 2023. This release will have numerous API changes along with [actual documentation](https://hillmaker.readthedocs.io/en/latest/intro.html). The notebooks used in the documentation are available in this repo. This new release isn't available yet in PyPI. If you
 want to install it, you can use pip to install it from the `develop` branch:
 
-    pip install git+https://github.com/misken/hillmaker/tree/develop
+    pip install git+https://github.com/misken/hillmaker@develop
 
 
