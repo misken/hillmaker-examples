@@ -1,5 +1,5 @@
 # ignore temporary Python stuff
 scripts/*.pyc
-notebooks/.ipynb_checkpoints/
-notebooks/output/*
-scripts/output/*
+./.ipynb_checkpoints/
+output/*
+
