@@ -10,6 +10,10 @@ need to install hillmaker into a virtual environment and then use that environme
 
     pip install hillmaker
 
-You should also be able to install hillmaker from conda-forge shortly.
+You should also be able to install hillmaker from conda-forge shortly into a virtual environment.
+
+    conda config --add channels conda-forge
+    conda config --set channel_priority strict
+    conda install hillmaker 
 
 
